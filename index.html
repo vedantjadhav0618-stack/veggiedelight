@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeggieDelight - Vegetarian Recipes & Tips</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #333; padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .recipe { margin-bottom: 20px; }
+        .recipe img { max-width: 100%; height: auto; border-radius: 8px; }
+        footer { text-align: center; padding: 10px; background-color: #333; color: white; margin-top: 20px; }
+        form { display: flex; flex-direction: column; max-width: 400px; }
+        input, textarea { margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VeggieDelight</h1>
+        <p>Your go-to source for delicious vegetarian recipes and healthy living tips!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#tips">Tips</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div id="home" class="container">
+        <h2>Welcome to VeggieDelight</h2>
+        <p>Discover mouthwatering vegetarian dishes that are easy to make and good for you. Whether you're a seasoned veggie lover or just starting out, we've got recipes for every occasion.</p>
+        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vegetarian Feast - Photo by Unsplash">
+    </div>
+    
+    <div id="recipes" class="container">
+        <h2>Featured Recipes</h2>
+        <div class="recipe">
+            <h3>Quinoa Stuffed Peppers</h3>
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Quinoa Stuffed Peppers - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Bell peppers, quinoa, black beans, corn, tomatoes, spices.</p>
+            <p><strong>Instructions:</strong> Cook quinoa, mix with veggies, stuff into peppers, bake at 375°F for 30 minutes.</p>
+        </div>
+        <div class="recipe">
+            <h3>Vegan Lentil Soup</h3>
+            <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vegan Lentil Soup - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Lentils, carrots, celery, onions, vegetable broth, garlic.</p>
+            <p><strong>Instructions:</strong> Sauté veggies, add lentils and broth, simmer for 30 minutes. Season to taste.</p>
+        </div>
+        <div class="recipe">
+            <h3>Avocado Toast with Tofu Scramble</h3>
+            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Avocado Toast with Tofu Scramble - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Whole grain bread, avocado, tofu, turmeric, spinach.</p>
+            <p><strong>Instructions:</strong> Scramble tofu with spices, toast bread, top with avocado and scramble.</p>
+        </div>
+        <div class="recipe">
+            <h3>पाणीपुरी (Pani Puri)</h3>
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pani Puri - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Hollow puris, boiled potatoes, chickpeas, tamarind chutney, mint chutney, spiced water (pani).</p>
+            <p><strong>Instructions:</strong> Fill puris with potato-chickpea mix, add chutneys, pour spiced pani, and serve immediately.</p>
+        </div>
+        <div class="recipe">
+            <h3>वडापाव (Vada Pav)</h3>
+            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vada Pav - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Potato vada (mashed potatoes with spices), pav bread, chutneys (garlic, green chili).</p>
+            <p><strong>Instructions:</strong> Fry vada, slit pav, add vada and chutneys inside, and serve hot.</p>
+        </div>
+        <div class="recipe">
+            <h3>इडली सांबर (Idli Sambar)</h3>
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Idli Sambar - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Idli (fermented rice-lentil batter), sambar (lentils, veggies, tamarind, spices).</p>
+            <p><strong>Instructions:</strong> Steam idli batter into cakes, prepare sambar by cooking lentils with veggies, serve together.</p>
+        </div>
+        <div class="recipe">
+            <h3>डोसा सांबर (Dosa Sambar)</h3>
+            <img src="https://images.unsplash.com/photo-1551782450-17144efb5723?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dosa Sambar - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Dosa (fermented rice-lentil crepe), sambar (lentils, veggies, tamarind).</p>
+            <p><strong>Instructions:</strong> Spread batter on hot griddle, cook dosa, serve with sambar and chutney.</p>
+        </div>
+        <div class="recipe">
+            <h3>Vegetarian Pizza</h3>
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vegetarian Pizza - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Pizza dough, tomato sauce, cheese, bell peppers, mushrooms, olives.</p>
+            <p><strong>Instructions:</strong> Roll dough, add sauce and toppings, bake at 450°F for 15 minutes.</p>
+        </div>
+        <div class="recipe">
+            <h3>Vegetarian Burger</h3>
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vegetarian Burger - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Veggie patty (beans/lentils), burger buns, lettuce, tomato, cheese, sauces.</p>
+            <p><strong>Instructions:</strong> Grill patty, assemble in bun with veggies and sauces.</p>
+        </div>
+        <div class="recipe">
+            <h3>गुलाब जामून (Gulab Jamun)</h3>
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Gulab Jamun - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Milk solids (khoya), flour, sugar syrup, rose water.</p>
+            <p><strong>Instructions:</strong> Mix khoya and flour, form balls, fry, soak in warm syrup.</p>
+        </div>
+        <div class="recipe">
+            <h3>रसगुल्ला (Rasgulla)</h3>
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Rasgulla - Photo by Unsplash">
+            <p><strong>Ingredients:</strong> Paneer (cottage cheese), sugar syrup, cardamom.</p>
+            <p><strong>Instructions:</strong> Knead paneer, form balls, boil in syrup until soft.</p>
+        </div>
+    </div>
+    
+    <div id="tips" class="container">
+        <h2>Vegetarian Living Tips</h2>
+        <ul>
+            <li><strong>Protein Sources:</strong> Include beans, lentils, tofu, and nuts in your meals.</li>
+            <li><strong>Meal Prep:</strong> Batch-cook grains and veggies for quick weeknight dinners.</li>
+            <li><strong>Supplements:</strong> Consider B12 and iron supplements if needed.</li>
+            <li><strong>Variety:</strong> Experiment with global cuisines like Indian, Mediterranean, and Asian for flavor.</li>
+        </ul>
+    </div>
+    
+    <div id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Have a recipe idea or question? Reach out!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 VeggieDelight. All rights reserved.</p>
+    </footer>
+</body>
+</html>
